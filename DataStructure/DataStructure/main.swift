@@ -7,5 +7,11 @@
 
 import Foundation
 
-print("Hello, World!")
+print("Hello, World!")  
 
+var q2:Queue2<Int> = Queue2()
+q2.enQueue(10)
+q2.enQueue(20)
+q2.enQueue(30)
+
+print(q2)
