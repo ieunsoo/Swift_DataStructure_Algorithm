@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E074186E2C7361B000CACE76 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E074186D2C7361B000CACE76 /* main.swift */; };
+		E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03102552C75ADAF006AA2F5 /* ArrayList.swift */; };
 		E07418752C7361BD00CACE76 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418742C7361BD00CACE76 /* Stack.swift */; };
 		E07418772C7361D600CACE76 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418762C7361D600CACE76 /* Queue.swift */; };
 		E07418792C7361F700CACE76 /* SingleLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418782C7361F700CACE76 /* SingleLinkedList.swift */; };
+		E0841AEC2C7FFE9900D6E786 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0841AEB2C7FFE9900D6E786 /* BinarySearchTree.swift */; };
+		E0841AEE2C80002A00D6E786 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0841AED2C80002A00D6E786 /* Heap.swift */; };
+		E0841AF22C80094D00D6E786 /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0841AF12C80094D00D6E786 /* BellmanFord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +29,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E03102542C75AB98006AA2F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E03102552C75ADAF006AA2F5 /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		E074186A2C7361B000CACE76 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
-		E074186D2C7361B000CACE76 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E07418742C7361BD00CACE76 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		E07418762C7361D600CACE76 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		E07418782C7361F700CACE76 /* SingleLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLinkedList.swift; sourceTree = "<group>"; };
+		E0841AEA2C7FFDE600D6E786 /* tree */ = {isa = PBXFileReference; lastKnownFileType = text; path = tree; sourceTree = "<group>"; };
+		E0841AEB2C7FFE9900D6E786 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
+		E0841AED2C80002A00D6E786 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		E0841AF12C80094D00D6E786 /* BellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
+		E0841AF32C80097D00D6E786 /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E03102512C75A99D006AA2F5 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E0841AE92C7FFDD100D6E786 /* Tree */,
+				E03102552C75ADAF006AA2F5 /* ArrayList.swift */,
+				E07418742C7361BD00CACE76 /* Stack.swift */,
+				E07418762C7361D600CACE76 /* Queue.swift */,
+				E07418782C7361F700CACE76 /* SingleLinkedList.swift */,
+				E0841AF32C80097D00D6E786 /* readme */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		E03102522C75A9A6006AA2F5 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				E0841AF12C80094D00D6E786 /* BellmanFord.swift */,
+				E0841AF02C8007E300D6E786 /* Search */,
+				E0841AEF2C8007D400D6E786 /* Sort */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		E03102532C75A9B1006AA2F5 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
 		E07418612C7361B000CACE76 = {
 			isa = PBXGroup;
 			children = (
@@ -63,12 +102,36 @@
 		E074186C2C7361B000CACE76 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
-				E074186D2C7361B000CACE76 /* main.swift */,
-				E07418742C7361BD00CACE76 /* Stack.swift */,
-				E07418762C7361D600CACE76 /* Queue.swift */,
-				E07418782C7361F700CACE76 /* SingleLinkedList.swift */,
+				E03102512C75A99D006AA2F5 /* DataStructure */,
+				E03102522C75A9A6006AA2F5 /* Algorithm */,
+				E03102532C75A9B1006AA2F5 /* DesignPattern */,
+				E03102542C75AB98006AA2F5 /* README.md */,
 			);
 			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		E0841AE92C7FFDD100D6E786 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				E0841AEA2C7FFDE600D6E786 /* tree */,
+				E0841AEB2C7FFE9900D6E786 /* BinarySearchTree.swift */,
+				E0841AED2C80002A00D6E786 /* Heap.swift */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		E0841AEF2C8007D400D6E786 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		E0841AF02C8007E300D6E786 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E07418752C7361BD00CACE76 /* Stack.swift in Sources */,
+				E0841AF22C80094D00D6E786 /* BellmanFord.swift in Sources */,
+				E0841AEC2C7FFE9900D6E786 /* BinarySearchTree.swift in Sources */,
+				E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */,
 				E07418772C7361D600CACE76 /* Queue.swift in Sources */,
 				E07418792C7361F700CACE76 /* SingleLinkedList.swift in Sources */,
-				E074186E2C7361B000CACE76 /* main.swift in Sources */,
+				E0841AEE2C80002A00D6E786 /* Heap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

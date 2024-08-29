@@ -7,6 +7,7 @@
 
 import Foundation
 
+//가장 간단한 queue
 struct Queue<T>{
     var queue:[T] = []
     
@@ -29,6 +30,8 @@ struct Queue<T>{
     }
 }
 
+
+//head를 이용항 큐를 만들고 메모리 오버헤드 줄이기
 struct Queue2<T>{
     var queue:[T?] = []
     var head:Int = 0
