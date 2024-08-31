@@ -61,3 +61,19 @@ struct Queue2<T>{
     
 }
 
+//원형 큐, 추가 확장을 지원하지 않는다, 생성당시의 크기를 유지한다.
+class circularQueue<T>{
+    var front:T
+    var rear:T
+    let MAXQ_SIZE:Int
+    var cQueue:[T]?
+    
+    init(front: T, rear: T, MAXQ_SIZE: Int) {
+        self.front = front
+        self.rear = rear
+        self.MAXQ_SIZE = MAXQ_SIZE
+//        self.cQueue = [T](repeating: nil, count: self.MAXQ_SIZE)
+        
+    }
+    
+}

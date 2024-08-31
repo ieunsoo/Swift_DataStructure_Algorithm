@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol Stackable{
+    //stack에 필요한 변수나 함수들 정의
+}
+
 struct Stack<T>{
     var stack:[T] = []
     
@@ -28,3 +32,7 @@ struct Stack<T>{
     }
     
 }
+
+
+
+//괄호검사 함수 만들기 문자열에 { [ ( 이 들어오면 stack에 push하고 닫히는 괄호가 들어오면 pop, 마지막까지 괄호가 남아있으면 오류
