@@ -36,11 +36,10 @@ class Book {
 
 // BookShelf 클래스
 class BookShelf: Iterable {
-    var books: [Book]
+    var books: [Book] = []
     var last: Int = 0
     
-    init(maxsize: Int) {
-        self.books = Array(repeating: Book(name: ""), count: maxsize) // 배열 초기화
+    init() {
     }
     
     func getBookAt(index: Int) -> Book {
