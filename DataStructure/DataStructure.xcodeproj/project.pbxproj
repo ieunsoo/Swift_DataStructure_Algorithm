@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,6 @@
 		E08824FE2C95173B0011D76C /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08824FD2C95173B0011D76C /* Iterator.swift */; };
 		E090602C2CB520EE00285A33 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = E090602B2CB520EE00285A33 /* Prototype.swift */; };
 		E0A9A89A2CB4D02D004818C6 /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9A8992CB4D02D004818C6 /* FactoryMethod.swift */; };
-		E0F5D81C2CA54D2D00845B6B /* Adapter01.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5D81B2CA54D1C00845B6B /* Adapter01.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,8 +46,11 @@
 		E08824FD2C95173B0011D76C /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		E090602B2CB520EE00285A33 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
 		E0A9A8992CB4D02D004818C6 /* FactoryMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
-		E0F5D81B2CA54D1C00845B6B /* Adapter01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E061D04D2CBA5DFE00594540 /* Adapter */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Adapter; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E07418672C7361B000CACE76 /* Frameworks */ = {
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E00FF2B12CC0B55700493828 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				E08824FD2C95173B0011D76C /* Iterator.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
 		E03102512C75A99D006AA2F5 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,9 +97,9 @@
 		E03102532C75A9B1006AA2F5 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
-				E0F5D81B2CA54D1C00845B6B /* Adapter01.swift */,
+				E00FF2B12CC0B55700493828 /* Iterator */,
+				E061D04D2CBA5DFE00594540 /* Adapter */,
 				E090602B2CB520EE00285A33 /* Prototype.swift */,
-				E08824FD2C95173B0011D76C /* Iterator.swift */,
 				E0A9A8992CB4D02D004818C6 /* FactoryMethod.swift */,
 			);
 			path = DesignPattern;
@@ -161,6 +171,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				E061D04D2CBA5DFE00594540 /* Adapter */,
+			);
 			name = DataStructure;
 			productName = DataStructure;
 			productReference = E074186A2C7361B000CACE76 /* DataStructure */;
@@ -207,7 +220,6 @@
 				E07418752C7361BD00CACE76 /* Stack.swift in Sources */,
 				E090602C2CB520EE00285A33 /* Prototype.swift in Sources */,
 				E0841AF22C80094D00D6E786 /* BellmanFord.swift in Sources */,
-				E0F5D81C2CA54D2D00845B6B /* Adapter01.swift in Sources */,
 				E0A9A89A2CB4D02D004818C6 /* FactoryMethod.swift in Sources */,
 				E0841AEC2C7FFE9900D6E786 /* BinarySearchTree.swift in Sources */,
 				E08824FE2C95173B0011D76C /* Iterator.swift in Sources */,
