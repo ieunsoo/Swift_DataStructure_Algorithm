@@ -36,10 +36,11 @@ class Book {
 
 // BookShelf 클래스
 class BookShelf: Iterable {
-    var books: [Book] = []
+    var books: [Book]
     var last: Int = 0
     
     init() {
+        books = [] 
     }
     
     func getBookAt(index: Int) -> Book {
@@ -47,7 +48,7 @@ class BookShelf: Iterable {
     }
     
     func appendBook(book: Book) {
-        books[last] = book
+        books.append(book)
         last += 1
     }
     
@@ -90,16 +91,23 @@ class BookShelfIterator: Iterator {
 
 // 테스트 코드
 /*
-let bookShelf = BookShelf(maxsize: 5)
-bookShelf.appendBook(book: Book(name: "Swift Programming"))
-bookShelf.appendBook(book: Book(name: "Design Patterns"))
-bookShelf.appendBook(book: Book(name: "Data Structures"))
 
-let it = bookShelf.iterator()
-while it.hasNext() {
-    if let book = it.next() {
-        print(book.getName())
-    }
-}
 */
 
+@main
+struct Main {
+    static func main() {
+        let bookShelf = BookShelf()
+        bookShelf.appendBook(book: Book(name: "Swift Programming"))
+        bookShelf.appendBook(book: Book(name: "Design Patterns"))
+        bookShelf.appendBook(book: Book(name: "Data Structures"))
+
+        let it = bookShelf.iterator()
+        while it.hasNext() {
+            if let book = it.next() {
+                print(book.getName())
+            }
+        }
+        
+    }
+}

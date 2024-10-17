@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Node<T> {
+class Node<T: Equatable>{
     let value: T?
     var next: Node?
     
@@ -21,7 +21,7 @@ class Node<T> {
 }
 
 
-class SingleLinkedList<T> {
+class SingleLinkedList<T: Equatable> {
     private var head: Node<T>?
     
     func append(_ value: T) {
@@ -47,12 +47,59 @@ class SingleLinkedList<T> {
         }
         
     }
-    func removeFirst(){}
-    func removeLast(){}
+    func removeFirst(){
+        print("\(head?.value) removed")
+        head = head?.next
+    }
+    func removeLast(){
+        var cursor: Node<T>? = head
+        
+        while cursor?.next != nil {
+            if cursor?.next?.next == nil {
+                print("\(cursor?.next?.value) removed")
+                cursor?.next = nil
+                break
+            }
+            cursor = cursor?.next
+        }
+    }
     func remove(at: Int){}
-    func find(value: T) -> Node<T>{return Node()}
-    func get(at: Int) -> Node<T>{return Node()}
-    func contains(value: T){}
+    
+    //void타입으로 하고 결과를 print하는걸로
+    func find(value: T){
+        var cursor: Node<T>? = head
+        
+        while cursor?.next != nil {
+            if cursor?.next?.value == value{
+                if let next = cursor?.next { print(next.value) }
+            }
+            cursor = cursor?.next
+        }
+        
+        print("data not found")
+        
+    }
+    
+    func get(at: Int) -> T?{
+        var cursor: Node<T>? = head
+        var cnt: Int = 0
+        
+        
+        if at >= size() {
+            return nil
+        }
+        else{
+            while cnt > at {
+                if cnt == at {
+                    return cursor!.value
+                }
+                cnt += 1
+                cursor = cursor?.next
+            }
+            
+        }
+        return nil
+    }
     func isEmpty() -> Bool{
         if let head = head {
             return false
@@ -60,12 +107,23 @@ class SingleLinkedList<T> {
             return true
         }
     }
-    func size() -> Int{return 0}
-    func reverse(){}
+    func size() -> Int{
+        var cursor: Node<T>? = head
+        var count: Int = 0
+        while cursor?.next != nil {
+            count += 1
+            cursor = cursor?.next
+        }
+        return count
+    }
     func printList(){
         var cursor: Node<T>? = head
         
-        //while let을 사용하는 방법 찾아보기
+        while cursor?.next != nil {
+            print(cursor?.value)
+            cursor = cursor?.next
+        }
+        
         
     }
     
