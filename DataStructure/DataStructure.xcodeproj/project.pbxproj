@@ -12,6 +12,11 @@
 		E00FF2B82CC0FB3000493828 /* TextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2B72CC0FB3000493828 /* TextBuilder.swift */; };
 		E00FF2BA2CC0FCCD00493828 /* HTMLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2B92CC0FCCD00493828 /* HTMLBuilder.swift */; };
 		E00FF2BC2CC0FDC300493828 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2BB2CC0FDC300493828 /* Main.swift */; };
+		E00FF2C52CC2A52000493828 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2C42CC2A52000493828 /* Display.swift */; };
+		E00FF2C72CC2A52D00493828 /* DisplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2C62CC2A52D00493828 /* DisplayImpl.swift */; };
+		E00FF2C92CC2A54200493828 /* StringDisplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2C82CC2A54200493828 /* StringDisplayImpl.swift */; };
+		E00FF2CB2CC2A54900493828 /* BridgePatternMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2CA2CC2A54900493828 /* BridgePatternMain.swift */; };
+		E00FF2CD2CC2A64C00493828 /* CountDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2CC2CC2A64C00493828 /* CountDisplay.swift */; };
 		E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03102552C75ADAF006AA2F5 /* ArrayList.swift */; };
 		E07418752C7361BD00CACE76 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418742C7361BD00CACE76 /* Stack.swift */; };
 		E07418772C7361D600CACE76 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418762C7361D600CACE76 /* Queue.swift */; };
@@ -42,6 +47,11 @@
 		E00FF2B72CC0FB3000493828 /* TextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBuilder.swift; sourceTree = "<group>"; };
 		E00FF2B92CC0FCCD00493828 /* HTMLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLBuilder.swift; sourceTree = "<group>"; };
 		E00FF2BB2CC0FDC300493828 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		E00FF2C42CC2A52000493828 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
+		E00FF2C62CC2A52D00493828 /* DisplayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayImpl.swift; sourceTree = "<group>"; };
+		E00FF2C82CC2A54200493828 /* StringDisplayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDisplayImpl.swift; sourceTree = "<group>"; };
+		E00FF2CA2CC2A54900493828 /* BridgePatternMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternMain.swift; sourceTree = "<group>"; };
+		E00FF2CC2CC2A64C00493828 /* CountDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDisplay.swift; sourceTree = "<group>"; };
 		E03102542C75AB98006AA2F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E03102552C75ADAF006AA2F5 /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		E074186A2C7361B000CACE76 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +69,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E061D04D2CBA5DFE00594540 /* Adapter */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Adapter; sourceTree = "<group>"; };
+		E061D04D2CBA5DFE00594540 /* AdapterPattern */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = AdapterPattern; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +83,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E00FF2B12CC0B55700493828 /* Iterator */ = {
+		E00FF2B12CC0B55700493828 /* IteratorPattern */ = {
 			isa = PBXGroup;
 			children = (
 				E08824FD2C95173B0011D76C /* Iterator.swift */,
 			);
-			path = Iterator;
+			path = IteratorPattern;
 			sourceTree = "<group>";
 		};
 		E00FF2B22CC0F67800493828 /* BuilderPattern */ = {
@@ -91,6 +101,25 @@
 				E00FF2BB2CC0FDC300493828 /* Main.swift */,
 			);
 			path = BuilderPattern;
+			sourceTree = "<group>";
+		};
+		E00FF2C32CC2A4F800493828 /* BridgePattern */ = {
+			isa = PBXGroup;
+			children = (
+				E00FF2C42CC2A52000493828 /* Display.swift */,
+				E00FF2C62CC2A52D00493828 /* DisplayImpl.swift */,
+				E00FF2C82CC2A54200493828 /* StringDisplayImpl.swift */,
+				E00FF2CA2CC2A54900493828 /* BridgePatternMain.swift */,
+				E00FF2CC2CC2A64C00493828 /* CountDisplay.swift */,
+			);
+			path = BridgePattern;
+			sourceTree = "<group>";
+		};
+		E00FF2CE2CC2ACAE00493828 /* CompositePattern */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CompositePattern;
 			sourceTree = "<group>";
 		};
 		E03102512C75A99D006AA2F5 /* DataStructure */ = {
@@ -119,9 +148,11 @@
 		E03102532C75A9B1006AA2F5 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				E00FF2CE2CC2ACAE00493828 /* CompositePattern */,
+				E00FF2C32CC2A4F800493828 /* BridgePattern */,
 				E00FF2B22CC0F67800493828 /* BuilderPattern */,
-				E00FF2B12CC0B55700493828 /* Iterator */,
-				E061D04D2CBA5DFE00594540 /* Adapter */,
+				E00FF2B12CC0B55700493828 /* IteratorPattern */,
+				E061D04D2CBA5DFE00594540 /* AdapterPattern */,
 				E090602B2CB520EE00285A33 /* Prototype.swift */,
 				E0A9A8992CB4D02D004818C6 /* FactoryMethod.swift */,
 			);
@@ -195,7 +226,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E061D04D2CBA5DFE00594540 /* Adapter */,
+				E061D04D2CBA5DFE00594540 /* AdapterPattern */,
 			);
 			name = DataStructure;
 			productName = DataStructure;
@@ -244,6 +275,7 @@
 				E090602C2CB520EE00285A33 /* Prototype.swift in Sources */,
 				E0841AF22C80094D00D6E786 /* BellmanFord.swift in Sources */,
 				E00FF2BC2CC0FDC300493828 /* Main.swift in Sources */,
+				E00FF2C52CC2A52000493828 /* Display.swift in Sources */,
 				E0A9A89A2CB4D02D004818C6 /* FactoryMethod.swift in Sources */,
 				E0841AEC2C7FFE9900D6E786 /* BinarySearchTree.swift in Sources */,
 				E00FF2B42CC0FA6800493828 /* Builder.swift in Sources */,
@@ -251,9 +283,13 @@
 				E08824FE2C95173B0011D76C /* Iterator.swift in Sources */,
 				E00FF2B62CC0FABC00493828 /* Director.swift in Sources */,
 				E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */,
+				E00FF2CB2CC2A54900493828 /* BridgePatternMain.swift in Sources */,
+				E00FF2C72CC2A52D00493828 /* DisplayImpl.swift in Sources */,
+				E00FF2C92CC2A54200493828 /* StringDisplayImpl.swift in Sources */,
 				E07418772C7361D600CACE76 /* Queue.swift in Sources */,
 				E07418792C7361F700CACE76 /* SingleLinkedList.swift in Sources */,
 				E00FF2B82CC0FB3000493828 /* TextBuilder.swift in Sources */,
+				E00FF2CD2CC2A64C00493828 /* CountDisplay.swift in Sources */,
 				E0841AEE2C80002A00D6E786 /* Heap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
