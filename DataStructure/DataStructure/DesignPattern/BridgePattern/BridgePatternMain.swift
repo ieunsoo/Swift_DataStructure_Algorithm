@@ -7,10 +7,10 @@
 
 import Foundation
 
-@main
-struct Main {
-    static func main() {
-        var d: CountDisplay = CountDisplay(StringDisplayImpl("Hello Korea"))
-        d.multiDisplay(11)
-    }
-}
+//@main
+//struct Main {
+//    static func main() {
+//        var d: CountDisplay = CountDisplay(StringDisplayImpl("Hello Korea"))
+//        d.multiDisplay(11)
+//    }
+//}

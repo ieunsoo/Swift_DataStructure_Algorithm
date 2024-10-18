@@ -17,6 +17,10 @@
 		E00FF2C92CC2A54200493828 /* StringDisplayImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2C82CC2A54200493828 /* StringDisplayImpl.swift */; };
 		E00FF2CB2CC2A54900493828 /* BridgePatternMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2CA2CC2A54900493828 /* BridgePatternMain.swift */; };
 		E00FF2CD2CC2A64C00493828 /* CountDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2CC2CC2A64C00493828 /* CountDisplay.swift */; };
+		E00FF2D02CC2AE0600493828 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2CF2CC2AE0600493828 /* Directory.swift */; };
+		E00FF2D22CC2AEF100493828 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2D12CC2AEF100493828 /* Entry.swift */; };
+		E00FF2D42CC2AEFC00493828 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2D32CC2AEFC00493828 /* File.swift */; };
+		E00FF2D62CC2AF0800493828 /* CompositeMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00FF2D52CC2AF0800493828 /* CompositeMain.swift */; };
 		E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03102552C75ADAF006AA2F5 /* ArrayList.swift */; };
 		E07418752C7361BD00CACE76 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418742C7361BD00CACE76 /* Stack.swift */; };
 		E07418772C7361D600CACE76 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07418762C7361D600CACE76 /* Queue.swift */; };
@@ -52,6 +56,10 @@
 		E00FF2C82CC2A54200493828 /* StringDisplayImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDisplayImpl.swift; sourceTree = "<group>"; };
 		E00FF2CA2CC2A54900493828 /* BridgePatternMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternMain.swift; sourceTree = "<group>"; };
 		E00FF2CC2CC2A64C00493828 /* CountDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDisplay.swift; sourceTree = "<group>"; };
+		E00FF2CF2CC2AE0600493828 /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		E00FF2D12CC2AEF100493828 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		E00FF2D32CC2AEFC00493828 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E00FF2D52CC2AF0800493828 /* CompositeMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeMain.swift; sourceTree = "<group>"; };
 		E03102542C75AB98006AA2F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E03102552C75ADAF006AA2F5 /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
 		E074186A2C7361B000CACE76 /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +126,10 @@
 		E00FF2CE2CC2ACAE00493828 /* CompositePattern */ = {
 			isa = PBXGroup;
 			children = (
+				E00FF2CF2CC2AE0600493828 /* Directory.swift */,
+				E00FF2D12CC2AEF100493828 /* Entry.swift */,
+				E00FF2D32CC2AEFC00493828 /* File.swift */,
+				E00FF2D52CC2AF0800493828 /* CompositeMain.swift */,
 			);
 			path = CompositePattern;
 			sourceTree = "<group>";
@@ -271,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E00FF2D42CC2AEFC00493828 /* File.swift in Sources */,
+				E00FF2D22CC2AEF100493828 /* Entry.swift in Sources */,
 				E07418752C7361BD00CACE76 /* Stack.swift in Sources */,
 				E090602C2CB520EE00285A33 /* Prototype.swift in Sources */,
 				E0841AF22C80094D00D6E786 /* BellmanFord.swift in Sources */,
@@ -279,7 +293,9 @@
 				E0A9A89A2CB4D02D004818C6 /* FactoryMethod.swift in Sources */,
 				E0841AEC2C7FFE9900D6E786 /* BinarySearchTree.swift in Sources */,
 				E00FF2B42CC0FA6800493828 /* Builder.swift in Sources */,
+				E00FF2D02CC2AE0600493828 /* Directory.swift in Sources */,
 				E00FF2BA2CC0FCCD00493828 /* HTMLBuilder.swift in Sources */,
+				E00FF2D62CC2AF0800493828 /* CompositeMain.swift in Sources */,
 				E08824FE2C95173B0011D76C /* Iterator.swift in Sources */,
 				E00FF2B62CC0FABC00493828 /* Director.swift in Sources */,
 				E03102562C75ADAF006AA2F5 /* ArrayList.swift in Sources */,
