@@ -40,7 +40,7 @@ class BookShelf: Iterable {
     var last: Int = 0
     
     init() {
-        books = [] 
+        books = []
     }
     
     func getBookAt(index: Int) -> Book {
@@ -94,20 +94,20 @@ class BookShelfIterator: Iterator {
 
 */
 
-@main
-struct Main {
-    static func main() {
-        let bookShelf = BookShelf()
-        bookShelf.appendBook(book: Book(name: "Swift Programming"))
-        bookShelf.appendBook(book: Book(name: "Design Patterns"))
-        bookShelf.appendBook(book: Book(name: "Data Structures"))
-
-        let it = bookShelf.iterator()
-        while it.hasNext() {
-            if let book = it.next() {
-                print(book.getName())
-            }
-        }
-        
-    }
-}
+//@main
+//struct Main {
+//    static func main() {
+//        let bookShelf = BookShelf()
+//        bookShelf.appendBook(book: Book(name: "Swift Programming"))
+//        bookShelf.appendBook(book: Book(name: "Design Patterns"))
+//        bookShelf.appendBook(book: Book(name: "Data Structures"))
+//
+//        let it = bookShelf.iterator()
+//        while it.hasNext() {
+//            if let book = it.next() {
+//                print(book.getName())
+//            }
+//        }
+//        
+//    }
+//}
